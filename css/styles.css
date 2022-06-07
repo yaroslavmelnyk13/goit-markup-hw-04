@@ -27,6 +27,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p{
     margin: 0;
 }
@@ -54,6 +57,7 @@ address {
 }
 .link {
     text-decoration: none;
+  
 }
 .item {
     list-style-type: none;
@@ -142,7 +146,8 @@ address {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
+  }
+  
 
 .contact-nav .item+.item {
     margin-left: 50px;
@@ -160,6 +165,7 @@ address {
     
 .contact-soc-icon{
     margin-right: 10px;
+    fill: currentColor;
   }
     
  
@@ -181,6 +187,9 @@ address {
 
 /* Hero title */
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--footer-bg-color);
@@ -334,7 +343,7 @@ address {
     width: 44px;
     height: 44px;
     margin-right: 10px;
-    margin-bottom: 30px;
+   
 }
 .team-soc-item:last-child {
  margin: 0px;
@@ -353,14 +362,14 @@ address {
     align-items: center;
     justify-content: center;
     background-color: var(--primary-white-color-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
   } 
 
 
 .team-soc-link:hover, 
 .team-soc-link:focus{
     background-color: var(--accent-color); 
-   
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-soc-link:hover .team-soc-icon,
 .team-soc-link:focus .team-soc-icon{
@@ -368,7 +377,8 @@ address {
 }
 /*Klients*/
 .klients {
-    padding: 94px 215px 94px 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .klients-list {
@@ -443,6 +453,7 @@ address {
 
 .footer-connect {
     display: flex;
+    align-items: baseline;
 
 }
 .connect{
@@ -462,9 +473,8 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    padding-bottom: 20px;
-    margin-top: 14px;
-}
+    margin-bottom: 20px;
+  }
 
 .connect-link {
     display: flex;
@@ -473,8 +483,7 @@ address {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--bg-color-icon);
-
+    background: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -485,14 +494,17 @@ address {
 .connect-link:hover,
 .connect-link:focus {
     background-color: var(--accent-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .connect-icon {
     fill: var(--primary-white-color);
+    
 }
 
 .connect-icon:hover {
     fill: var(--primary-white-color);
+
 }
 
 
