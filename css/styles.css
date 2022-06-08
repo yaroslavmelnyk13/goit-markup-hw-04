@@ -136,9 +136,12 @@ address {
 .contact-nav{
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .contact-nav .link {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-text-color);
@@ -386,10 +389,10 @@ address {
 
 }
 
-.klients-base {
+/*.klients-base {
     display: flex;
     justify-content: center;
-}
+}*/
 
 .klient-link {
     display: flex;
@@ -405,7 +408,7 @@ address {
 }
 
 .klients-item:not(:last-child) {
-    margin-right: 33px;
+    margin-right: 30px;
 }
 
 .klient-link:hover,
@@ -593,15 +596,30 @@ address {
 .project-container {
     padding: 20px 24px;
     border: 1px solid var(--portfolio-border-color);
-    border-top: none;
-    
+    border-top: none; 
 }
+
+.project-link { 
+    display: block;
+    box-shadow: none;
+
+
+}
+
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 .project-item {
     width: 370px;
     margin-bottom: 30px;
     margin-right: 30px;
 
 }
+
+
 
 .project-item:nth-child(3n) {margin-right: 0;
 }
@@ -622,4 +640,5 @@ address {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
+    color: var(--primary-text-color);
 }
